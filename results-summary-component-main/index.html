@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size:11px;
+
+      /*  text-align: center; */
+      /* height: 730px;
+      width: 520px; */
+      background-color:white;
+      border: 5px solid black; 
+      display: flex;
+      border-radius: 1rem;
+      width: fit-content;      
+      height: fit-content;
+      box-shadow: 10px 10px lightgray;
+    }
+    /* .attribution a { color: hsl(228, 45%, 44%); } */
+  
+    *{
+      font-family: 'Hanken Grotesk';
+    }
+
+  .purple-area{
+    width: 360px;
+    height: 500px;
+    background-color :hsla(256, 72%, 46%, 1);
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .main-circle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+    .circular-part{
+    width:190px ;
+    height:180px ;
+    background-color:  hsl(256, 72%, 46%);
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+    border-radius: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   color:  hsl(0, 0%, 100%);
+   margin:0;
+   padding: 0;
+  
+  } 
+
+  .in-circle{
+    font-weight: 800;
+    font-size: 50px;
+
+  }
+
+  .in-circle2{
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .headingp{
+    padding-top: 25px;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 800;
+  }
+
+.para1{
+  color:hsl(0, 0%, 100%) ;
+  font-size: 15px;
+}
+
+.para{
+  color:hsl(0, 0%, 100%) ;
+  padding: 20px;
+  font-size: 30px;
+
+}
+ .white-part{
+ 
+  width: 370px;
+  height: 520px;
+  margin-left: 20px;
+} 
+.Summary{
+  font-weight: 800;
+}
+
+.Reaction{
+  display: block;
+  background-color: rgb(248, 227, 226); 
+  color: hsl(0, 100%, 67%);
+  font-weight: 500;
+  border-radius:150px;
+  ;
+
+
+}
+
+.Memory{
+  display: block;
+  background-color: rgb(255, 241, 245); 
+  color: hsl(39, 100%, 56%);
+  font-weight: 500;
+  border-radius:150px;
+
+}
+.Verbal{
+  display: block;
+  background-color: rgb(242, 251, 250); 
+  color:hsl(166, 100%, 37%);
+  font-weight: 500;
+  border-radius:150px;
+
+
+}
+.Visual{
+  display: block;
+  font-weight: 500;
+  background-color: rgb(243, 243, 253); 
+  color:  hsl(234, 85%, 45%);
+  border-radius:150px;
+  
+ 
+}
+.continue{
+  width: 250px;
+  height:40px;
+  border-radius:150px;
+  background-color:  hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 800;
+
+
+}
+
+.continue:hover{
+ background-color:hsla(256, 72%, 46%, 1);
+ cursor: pointer;
+}
+strong{
+  font-weight:bolder;
+  padding:6px;
+
+}
+.num{
+color: black;
+padding:0;
+
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken the
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue -->
+  
+  <div class="attribution">
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+   <div class="purple-area">
+    <h1 class="headingp">Your Result</h1>
+   
+    <div class="main-circle">
+    <div class="circular-part">
+    <pre><h1 class="in-circle">76</h1><span class="in-circle2">out of 100</span></pre>
+    </div>
+    </div>
+     <h1 class="para">Great</h1>
+     <pre><p class="para1">You scored higher than 
+      65% of the people who have taken 
+these tests </p>
+     </pre> 
+   </div>
+
+   <div class="white-part">
+    <h1 class="summary">Summary</h1>
+    <div class="icons">
+    <i class="Reaction"><pre><img src="./assets/images/icon-reaction.svg">Reaction                  <i class="num"><strong>80</strong>/100</i></pre></i>
+
+    <i class="Memory"><pre ><img src="./assets/images/icon-memory.svg">Memory                  <i class="num"><strong>92</strong>/100</i></pre></i>
+    <i class="Verbal"><pre ><img src="./assets/images/icon-verbal.svg">Verbal                    <i class="num"><strong>61</strong>/100</i></pre></i>
+    <i class="Visual"><pre class="inter"><img src="./assets/images/icon-visual.svg">Visual                    <i class="num"><strong>72</strong>/100</i></pre></i>
+
+  </div>
+  <button class="continue">Continue</button>
+   </div>
+  </div>
+</body>
+</html>
