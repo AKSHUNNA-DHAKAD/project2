@@ -10,20 +10,24 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size:11px;
+    body{
+      height: 675px;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+    .attribution {
+      font-size:11px;
 
-      /*  text-align: center; */
-      /* height: 730px;
-      width: 520px; */
+     
       background-color:white;
-      border: 5px solid black; 
+      /* border: 5px solid black;  */
       display: flex;
       border-radius: 1rem;
       width: fit-content;      
       height: fit-content;
-      box-shadow: 10px 10px lightgray;
+      box-shadow: 10px 10px 10px rgba(211, 211, 211, 0.386);
     }
-    /* .attribution a { color: hsl(228, 45%, 44%); } */
   
     *{
       font-family: 'Hanken Grotesk';
@@ -45,6 +49,7 @@
   }
 
     .circular-part{
+    
     width:190px ;
     height:180px ;
     background-color:  hsl(256, 72%, 46%);
@@ -56,6 +61,7 @@
    color:  hsl(0, 0%, 100%);
    margin:0;
    padding: 0;
+   margin-top: 30px;
   
   } 
 
@@ -97,48 +103,10 @@
   width: 370px;
   height: 520px;
   margin-left: 20px;
+  padding-top: 30px;
+  height: fit-content;
 } 
-.Summary{
-  font-weight: 800;
-}
 
-.Reaction{
-  display: block;
-  background-color: rgb(248, 227, 226); 
-  color: hsl(0, 100%, 67%);
-  font-weight: 500;
-  border-radius:150px;
-  ;
-
-
-}
-
-.Memory{
-  display: block;
-  background-color: rgb(255, 241, 245); 
-  color: hsl(39, 100%, 56%);
-  font-weight: 500;
-  border-radius:150px;
-
-}
-.Verbal{
-  display: block;
-  background-color: rgb(242, 251, 250); 
-  color:hsl(166, 100%, 37%);
-  font-weight: 500;
-  border-radius:150px;
-
-
-}
-.Visual{
-  display: block;
-  font-weight: 500;
-  background-color: rgb(243, 243, 253); 
-  color:  hsl(234, 85%, 45%);
-  border-radius:150px;
-  
- 
-}
 .continue{
   width: 250px;
   height:40px;
@@ -146,6 +114,7 @@
   background-color:  hsl(224, 30%, 27%);
   color: white;
   font-weight: 800;
+  margin-top: 40px;
 
 
 }
@@ -165,8 +134,112 @@ padding:0;
 
 }
 
+.Reaction{
+  display: block;
+  display: flex;
+  align-items: center;
+ margin: 5px;
+ background-color: rgb(248, 227, 226); 
+  color: hsl(0, 100%, 67%);
+     height: 35px;
+   width: fit-content; 
+   border-radius:5px;
+   font-weight: 500;
+      padding-right: 20px;
+}
+.Reaction img{
+  margin: 5px;
+}
+.Reaction strong{
+    margin-left: 85px;
+
+}
+
+ 
+.Memory{
+  display: block;
+  display: flex;
+  align-items: center;
+ margin: 5px;
+ background-color: rgb(255, 241, 245); 
+  color: hsl(39, 100%, 56%);
+     height: 35px;
+   width: fit-content; 
+   border-radius:5px;
+   font-weight: 500;
+      padding-right: 20px;
+      margin-top:20px ;
 
 
+}
+.Memory img{
+  margin: 5px;
+}
+.Memory strong{
+    margin-left: 88px;
+
+}
+
+
+
+
+.Verbal{
+  display: block;
+  display: flex;
+  align-items: center;
+ margin: 5px;
+ background-color: rgb(242, 251, 250); 
+  color:hsl(166, 100%, 37%);
+  font-weight: 500;
+     height: 35px;
+   width: fit-content; 
+   border-radius:5px;
+      padding-right: 20px;
+  margin-top:20px ;
+
+
+}
+.Verbal img{
+  margin: 5px;
+}
+
+.Verbal strong{
+    margin-left: 98px;
+
+}
+
+
+.Visual{
+  display: block;
+  display: flex;
+  align-items: center;
+ margin: 5px;
+ font-weight: 500;
+  background-color: rgb(243, 243, 253); 
+  color:  hsl(234, 85%, 45%);
+  font-weight: 500;
+     height: 35px;
+   width: fit-content; 
+   border-radius:5px;
+   padding-right: 20px;
+   margin-top:20px ;
+
+  }
+.Visual img{
+  margin: 5px;
+}
+.Visual strong{
+  margin-left: 100px;
+  
+}
+.Summary{
+  font-weight: 800;
+
+}
+
+.icons{
+  padding-top: 30px;
+}
   </style>
 </head>
 <body>
@@ -210,13 +283,15 @@ these tests </p>
    <div class="white-part">
     <h1 class="summary">Summary</h1>
     <div class="icons">
-    <i class="Reaction"><pre><img src="./assets/images/icon-reaction.svg">Reaction                  <i class="num"><strong>80</strong>/100</i></pre></i>
+<div class="Reaction" ><img src="./assets/images/icon-reaction.svg" ><h3>Reaction</h3><strong>80</strong>/100</div>
+<div class="Memory" ><img src="./assets/images/icon-memory.svg" ><h3>Memory</h3><strong>92</strong>/100</div>
+<div class="Verbal" ><img src="./assets/images/icon-verbal.svg" ><h3>Verbal</h3><strong>61</strong>/100</div>
+<div class="Visual" ><img src="./assets/images/icon-visual.svg" ><h3>Visual</h3><strong>72</strong>/100</div>
+  
+</div>
 
-    <i class="Memory"><pre ><img src="./assets/images/icon-memory.svg">Memory                  <i class="num"><strong>92</strong>/100</i></pre></i>
-    <i class="Verbal"><pre ><img src="./assets/images/icon-verbal.svg">Verbal                    <i class="num"><strong>61</strong>/100</i></pre></i>
-    <i class="Visual"><pre class="inter"><img src="./assets/images/icon-visual.svg">Visual                    <i class="num"><strong>72</strong>/100</i></pre></i>
 
-  </div>
+
   <button class="continue">Continue</button>
    </div>
   </div>
